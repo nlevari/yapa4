@@ -1,16 +1,21 @@
 {
-  "name": "react-mobx-seed",
-  "version": "1.0.0",
-  "description": "React + Mobx starter seed",
-  "author": "AmitBu",
+  "name": "yapa4",
+  "version": "0.0.1",
+  "description": "Yet Another Player Application",
+  "author": "nlevari",
+  "engines": {
+    "node": "6.10.2"
+  },
+  "main": "index.js",
   "scripts": {
     "test": "jest",
     "build": "./node_modules/.bin/rimraf build && ./node_modules/.bin/webpack --bail --progress --profile",
-    "start": "webpack-dev-server --content-base build/  --inline --port=8000"
+    "dev": "webpack-dev-server --content-base build/  --inline --port=8000",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AmitBu/react-mobx-seed.git"
+    "url": "https://github.com/nlevari/yapa4.git"
   },
   "dependencies": {
     "axios": "^0.16.1",
@@ -19,7 +24,8 @@
     "mobx": "3.1.9",
     "mobx-react": "4.1.8",
     "react": "^15.5.0",
-    "react-dom": "^15.5.0"
+    "react-dom": "^15.5.0",
+    "express": "4.15.2"
   },
   "devDependencies": {
     "babel-jest": "^15.0.0",
