@@ -11,7 +11,7 @@
     "test": "jest",
     "build": "./node_modules/.bin/rimraf build && ./node_modules/.bin/webpack --bail --progress --profile",
     "dev": "webpack-dev-server --content-base build/  --inline --port=8000",
-    "start": "node index.js"
+    "start": "npm run build && node index.js"
   },
   "repository": {
     "type": "git",
