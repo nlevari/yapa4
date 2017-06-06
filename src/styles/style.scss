@@ -1,0 +1,58 @@
+$primary-color: #1565C0;
+$background-color: #E3F2FD;
+@mixin spin($time) {
+    animation-name: spin;
+    animation-duration: $time;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration:$time;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: $time;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: $time;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-transition: rotate(3600deg);
+}
+
+@import "../components/playlists/playlists";
+@import "../components/playlist/playlist";
+@import "../components/video/video";
+@import "../components/search/search";
+@import "../components/player/player";
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: $background-color;
+    overflow-x: scroll;
+      
+}
+
+#app {
+    h1 {
+        color: $primary-color;
+    }
+}
+
+
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}

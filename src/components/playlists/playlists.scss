@@ -1,0 +1,9 @@
+.playlists {
+    white-space: nowrap;
+
+    .add-playlist {
+        display: inline-block;
+        cursor: pointer;
+        margin: 35px;
+    }
+}

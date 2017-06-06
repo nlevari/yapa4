@@ -1,0 +1,28 @@
+.playlist {
+    display: inline-block;
+    vertical-align: top;
+    width: 500px;
+    margin: 15px;
+    text-align: left;
+    white-space: normal;
+
+  .playlist-name-wrapper {
+      text-align: center;
+    
+    .playlist-name {
+      background-color: transparent;
+      border: none;
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+
+&.is-playing {
+  background: #87e0fd; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #d3f4ff 0%, #f1fbff 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #d3f4ff 0%, #f1fbff 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #d3f4ff 0%, #f1fbff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#05abe0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  border-radius: 10%;
+}
+}
