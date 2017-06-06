@@ -25,7 +25,8 @@
     "mobx-react": "4.1.8",
     "react": "^15.5.0",
     "react-dom": "^15.5.0",
-    "express": "4.15.2"
+    "express": "4.15.2",
+    "ejs": "2.5.6"
   },
   "devDependencies": {
     "babel-jest": "^15.0.0",
